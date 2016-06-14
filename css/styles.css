@@ -1,109 +1,279 @@
-
-
 .container {
     width: 920px;
     margin: 0 auto;
-    /*margin: 0; aplica a todos los margenes */
-    /*margin: 0 0; el primer aplica top-bottom y el segundo right-left*/
-    /*margin: 0 0 0; top right-left bottom*/
-    /*margin: 0 0 0 0; top right bottom left */
-    /*margin-top, margin-right, magin-bottom, margin-left*/
+    /* margin:0 aplica a todos*/
+    /* margin: 0 0; el primero aplica top-bottom y el segundo right-left */
+    /* margin: 0 0 0; top right-left bottom;*/
+    /* margin: 0 0 0 0; margin-top,margin-right, margin-bottom,margin-left */
+    /* margin-top,margin-right,margin-bottom,margin-left */
+}
+
+/*selector universal*/
+/*{
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px;
+}*/
+
+/*reset css*/
+h1,h2,h3,h4,h5,h6,figure,p{
+    margin: 0;
+    padding: 0;
 }
 
 #encabezado{
-    height: 150px;
+    height: 120px;
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
     align-items: center;
 }
-#encabezado figure{
+
+#encabezado figure {
     margin: 0;
-}
-#titulos * {
-    margin: 0;
+    
 }
 
-#encabezado h1{font-size: 1.2em;}
-#encabezado h2{font-size: 1em;}
-#encabezado h3{font-size: 0.9em;}
-#encabezado h4{font-size: 0.8em;}
+#encabezado h1{ font-size: 1.2em;}
+#encabezado h2{ font-size: 1em;}
+#encabezado h3{ font-size: 0.9em;}
+#encabezado h4{ font-size: 0.8em;}
 
 #menu{
     height: 50px;
-    background-color: darkgrey;
-    justify-content:  center;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
 }
-#munu ul{
+#menu ul{
     padding: 0;
-    
 }
-#contenido{
-    
-    
-}
-/*NOTA IMPORTANTE INICIO*/
-#nota-importante{
-    height: 300px;
-    background-color: #edf446;
-    background-color: #6bc6a3;
-    margin: 20px 0;
-    /*box-shadon: horizontal vertical blur color */
-    box-shadow 0 0 10px darkgray; 
-        
-    /*900 x 340 */
-}
-#nota-importante img{
-    border: 10px solid white;
-}
-#nota-secundaria{
-    height: 300px;
-    width: 700px;
-    display: inline-block;
-    float: left;
-    background-color: #85d5f8;
-    
-}
-#publicidad{
-    height: 300px;
-    width: 220px;
-    display: inline-block;
-    float: right;
-    background-color: #dd3df8;
-}
-#pie{
-    height: 150px;
-    clear: both;
-    background-color: #030303;
-     
-    
-}
-#menu li{
+#menu li {
     list-style-type: none;
+    padding: 0;
    
-    
 }
 #menu>ul>li{
-     padding: 10px;
     display: inline-block;
 }
-#menu li a {
+#menu li a{
     text-decoration: none;
     color: black;
 }
 #menu>ul>li>a{
-    padding: 10px;
-    
-    background-color: darkgrey;
-    transition: 0.6s;
+ 
+    padding: 10;
+    background-color: darkgray;
+    transition: 0.5;
+
 }
 #menu>ul>li>a:hover{
     background-color: lightgray;
-    transition: 0.6s;
-    
+    transition: 0.5;
     
 }
 #menu li ul{
     display: none;
 }
 
+
+
+/*NOTA IMPORTANTE INICIO*/
+
+#nota-importante{
+    height: auto;
+   
+    margin: 20px 0;
+    /*Box shadow horizontal vertical blur color*/
+    box-shadow: 0 0 15px darkgray;
+}
+
+#nota-importante img{
+    border: 10px solid white;
+}
+
+/*NOTA IMPORTANTE FIN*/
+
+/*NOTA SECUNDARIA INICIO*/
+
+#notas-secundarias{
+   min-height:300px;
+    width: 700px;
+    display: inline-block;
+    background-color: white; 
+}
+#notas-secundarias article{
+    display: flex;
+    background-image: url('../images/separador-nota-secundaria.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.imagen-nota-secundaria{
+    position: relative;
+     
+}
+.imagen-nota-secundaria img{
+    box-shadow: 0px 0px 5px gray;
+}
+.sombra-imagen{
+    box-shadow: 0px 0px 5px #bdbdbd;
+    
+}
+.imagen-nota-secundaria span{
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    padding: 5px 10px;
+    background-color: lightgray;
+    
+}
+.titulo-nota-secundaria{
+    font-size: 1.7em;
+    line-height: 0.9em;
+    font-variant: small-caps;
+}
+.cuerpo-nota-secundaria{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.intro-nota-secundaria{
+    text-align: justify;
+    margin: 10px 0;
+    
+}
+#notas-secundarias figure{
+    margin: 0;
+    position: relative;
+}
+#notas-secundarias figure span{
+    position: absolute;
+    top: 10px;
+    left:-5px;
+    background-color: lightgray;
+    padding: 5px,10px;
+}
+/*NOTA SECUNDARIA FIN*/
+
+/*Publicidad Inicio*/
+#publicidad{
+    height: 300px;
+    width: 220px;
+    display: inline-block;
+    background-color: white;
+    
+}
+
+#redes-sociales{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.facebook,.twitter{
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    text-indent: -9999px;
+    transition: 0.2s;
+}
+
+.facebook{
+    background: url('../images/facebook_twitter.png') 0 0;
+}
+.twitter{
+    background: url('../images/facebook_twitter.png') -43px 0;
+}
+.facebook:hover{
+    background: url('../images/facebook_twitter.png') 0 -43px;
+}
+.twitter:hover{
+    background: url('../images/facebook_twitter.png') -43px -43px;
+}
+
+/*Publicidad Fin*/
+
+/*Pie Inicio*/
+#pie{
+    height: 150px;
+    
+}
+
+#politicas{
+    text-align: center;
+    border-top:  3px double lightgray;
+    border-bottom: 3px double lightgray;
+    padding: 5px 0;
+    color:darkgray;
+}
+#politicas abbr{
+    cursor: help;
+    border-bottom: 1px dotted lightgray;
+}
+/*Pie Fin*/
+#titulos * {
+    margin: 0;
+}
+
+.boton {
+    background: red;
+    display: inline-block;
+    padding: 3px;
+    box-shadow: 0px 1px 3px darkgray;
+}
+.boton>div{
+    padding: 1px 20px;
+    border: 1px solid rgba(255,255,255,.7);
+}
+.boton p{
+    color: white;
+    font-variant: small-caps;
+    font-size: 1.1em;
+}
+
+.flexible {
+    display: flex;
+    
+}
+
+#programas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+#logo_sems {
+    background-image: url(../images/footer/sems_footer.png);
+    height: 60px;
+    width: 215px;
+    display: block;
+    text-indent: -9999px;
+    margin: auto;
+    
+}
+
+#separador-sems {
+    margin: 30px 0px;
+    position: relative;
+}
+#logo_sems:before,#logo_sems:after{
+    content: "";
+    border-top: 3px double lightgray ;
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 340px;
+    top: 36px;
+}
+#logo_sems:before{
+    left: 0;
+}
+#logo_sems:after{
+    right: 0;
+}
+#direccion p{
+    text-align: center;
+    color: darkgray;
+    font-size: 0.8em;
+}

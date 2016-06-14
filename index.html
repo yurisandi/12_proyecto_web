@@ -2,77 +2,195 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>proyecto web</title>
+    <title>Proyecto Web</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  
-<div class="container">
-   
-    <header id="encabezado"> 
-        <figure> 
-                  <!--rutas absolutas y rutas relativas-->
-                   <!--/relativa/a/raiz del sitio-->
-                   <!--relativa/al/archivo/actual-->
-                   <!--http://www.dominio.com/ruta/absoluta/index.html-->
-                   <!--file//c:\users\sony\practicas\12-proyecto\logo.sep_png-->
-            <img src="images/logo_sep.png" alt="Logotipo sep">
-        </figure>
-        <div id="titulos" >
-            <h1>Sitio Oficial del CETis No. 108</h1>
-            <h2>Subsecretaría de Educación Media Superior</h2>
-            <h3>Dirección General de Educación Tecnológica Industrial</h3>
-            <h4>Centro de Estudios Tecnológicos industrial y de servicios No. 108</h4>
-            <h5>"Gral. Gabriel Leyva Solano" C.C.T. 25DCT0108H</h5>
-        </div>
-            
-        <div id="busqueda">
-         <figure>
-             <img src="images/sems_dgeti.png" alt="logotipo">     
-         </figure>
-            <input type="text" name="busqueda" id="busqueda">
-            <button> Buscar</button>
-          </div>
-    </header>
-        <nav id="menu" >
-          <ul>
-             <!--unordered list-->
-             <li><a href="#">Inicio</a></li>
-             <li><a href="#">Plantel</a></li>
-             <li><a href="#">Oferta educativa</a></li>
-             <li><a href="#">Alumnos</a></li>
-             <li><a href="#">Docentes</a></li>
-             <li><a href="#">Empleados</a></li>
-             <li><a href="#">Contacto</a>
-             
-             <ul>
-                <li><a href="#">Programacion</a></li>
-                <li><a href="#">Soporte</a></li>
-                <li><a href="#">Contabilidad</a></li>
-                <li><a href="#">Mantenimiento Aut.</a></li>
-                <li><a href="#">Ele.</a></li>
-             </ul>
-             </li>
-             
-          </ul>
-        </nav>
-        <main id="contenido" >
-           
-        
-        <section id="nota-importante" >
-        <img src="images/winter-flowers_050310271.jpg" alt="Nota importante">
-
-        </section>
-        <section id="nota-secundaria" >
-            nota-secundaria
-        </section>
-        <aside id="publicidad" >
-            publicidad
-        </aside>
-        </main>
-        <footer id="pie" >
-            pie de pagina
-        </footer>
+ <div class="container">
+   <header id="encabezado">
+      <figure>
+         <!--rutas absolutas y relativas-->
+          <!--/relativa/a/raiz/del/sitio-->
+          <!--relativa/al/archivo//actual-->
+           <!--http://dominio.com/ruta/absoluta/index.html
+           -->
+          <img src="images/logo_sep.png" alt="logotipo SEP">
+          
+      </figure>
+       
+<div id="titulos">
+    <h1>Sitio Oficial del CETis No. 108</h1>
+    <h2>Subsecretaría de Educación Media Superior</h2>
+    <h3>Dirección General de Educación Tecnológica Industrial</h3>
+    <h4> Centro de Estudios Tecnológicos industrial y de servicios No. 108</h4>
+    <h4>"Gral. Gabriel Leyva Solano" C.C.T. 25DCT0108H</h4>
     </div>
+    <div id="busqueda">
+        <figure>
+            <img src="images/sems_dgeti.png" alt="Logotipo SEMS DGETI">
+        </figure>
+        <input type="text" name="busqueda" id="busqueda">
+        <button>Buscar</button>
+    </div>
+
+   </header>   
+    <nav id="menu">
+        <ul> <!--unordered list-->
+            <li><a href="#">Inicio</a></li> 
+            <li><a href="#">Plantel</a></li> 
+            <li>
+                <a href="#">Oferta educativa</a>
+                    <ul>
+                        <li><a href="#">Programacion</a></li>
+                        <li><a href="#">Soporte</a></li>
+                        <li><a href="#">Contabilidad</a></li>
+                        <li><a href="#">Mantenimiento aut.</a></li>
+                        <li><a href="#">Elec.</a></li>
+                    </ul>
+            </li> 
+            <li>
+               <a href="#">Alumnos</a>
+                <ul>
+                    <li><a href="#">Horarios</a>
+                    <li><a href="#">Calificaciones</a><li>
+                    <li><a href="#">Convocatorias</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Docentes</a></li> 
+            <li><a href="#">Empleados</a></li> 
+            <li><a href="#">Contacto</a></li> 
+        </ul>
+    </nav>
+    <main id="contenido">
+       <section id="nota-importante">
+        <img src="images/winter-flowers_050310271.jpg" alt="flores">   
+       </section>
+       <div class="flexible">
+           <section id="notas-secundarias">
+            <article class="nota-secundaria">
+               <figure class="imagen-nota-secundaria">
+                   <img class="sombra-imagen" src="images/notas/20140217_tmb.jpg" alt="image">
+                   <span>17 Feb</span>
+                   <p></p>
+               </figure>
+               <div class="cuerpo-nota-secundaria">
+                   <h2 class="titulo-nota-secundaria">Titulo de la nota</h2>
+                   <p class="intro-nota-secundaria">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos animi repellendus error dolore atque aspernatur iusto doloribus eligendi, laboriosam ipsam culpa nulla nihil necessitatibus eius odio consequatur voluptates adipisci.</p>
+                   <a href="#">
+                      <div class="boton">
+                       <div>
+                           <p>Leer más</p>
+                       </div>
+                   </div>
+                   </a>
+               </div>
+           </article>
+           <article class="nota-secundaria">
+               <figure class="imagen-nota-secundaria">
+                   <img class="sombra-imagen" src="images/notas/20140216_tmb.jpg" alt="image">
+                   <span>16 Feb</span>
+                   <p></p>
+               </figure>
+               <div class="cuerpo-nota-secundaria">
+                   <h2 class="titulo-nota-secundaria">Encuentro nacional de escoltas y bandas de guerra</h2>
+                   <p class="intro-nota-secundaria">Destacada participacion del CETis No.108 en Encuentro Nacional de Escoltas y Bandas de Guerra, obteniendo el Primer Lugar en Escolta de Bandera Categoría Libre,así como...</p>
+                   <a href="#">
+                      <div class="boton">
+                       <div>
+                           <p>Leer más</p>
+                       </div>
+                   </div>
+                   </a>
+               </div>
+           </article>
+           <article class="nota-secundaria">
+               <figure class="imagen-nota-secundaria">
+                   <img src="images/notas/20140822_tmb.jpg" alt="image">
+                   <span>22 Agos</span>
+                   <p></p>
+               </figure>
+               <div class="cuerpo-nota-secundaria">
+                   <h2 class="titulo-nota-secundaria">Titulo de la nota</h2>
+                   <p class="intro-nota-secundaria">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos animi repellendus error dolore atque aspernatur iusto doloribus eligendi, laboriosam ipsam culpa nulla nihil necessitatibus eius odio consequatur voluptates adipisci.</p>
+                   <a href="#">
+                      <div class="boton">
+                       <div>
+                           <p>Leer más</p>
+                       </div>
+                   </div>
+                   </a>
+               </div>
+           </article>
+           <article class="nota-secundaria">
+               <figure class="imagen-nota-secundaria">
+                   <img src="images/notas/20140825_tmb.jpg" alt="image">
+                   <span>25 Agos</span>
+                   <p></p>
+               </figure>
+               <div class="cuerpo-nota-secundaria">
+                   <h2 class="titulo-nota-secundaria">Encuentro nacional de escoltas y bandas de guerra</h2>
+                   <p class="intro-nota-secundaria">Destacada participacion del CETis No.108 en Encuentro Nacional de Escoltas y Bandas de Guerra, obteniendo el Primer Lugar en Escolta de Bandera Categoría Libre,así como...</p>
+                   <a href="#">
+                      <div class="boton">
+                       <div>
+                           <p>Leer más</p>
+                       </div>
+                   </div>
+                   </a>
+               </div>
+           </article>
+       </section>   
+       <aside id="publicidad">
+           <figure>
+           <div id="redes-sociales">
+            <a href="#" class="facebook">facebook</a>
+            <a href="#" class="twitter">twitter</a>
+            </div>
+            <img class="sombra-imagen" src="/12_proyecto_web/images/banner_vertical_bachillerato.png"  alt="prepa">
+            <img class="sombra-imagen" src="/12_proyecto_web/images/banner-jtyrc-2015.png" alt=":^)">
+           </figure>
+       </aside>
+       </div>
+       <section id="programas">
+           <figure>
+               <a href="#">
+                   <img class="sombra-imagen" src="images/programas/programa-abandono-escolar.jpg" alt="nose">
+                </a>
+            </figure>
+            <figure>
+               <a href="#">
+                   <img class="sombra-imagen" src="images/programas/programa-becas-media-superior.jpg" alt="llz">
+                </a>
+            </figure>
+            <figure>
+               <a href="#">
+                   <img class="sombra-imagen" src="images/programas/programa-decide-tus-estudios.jpg" alt="saknc">
+                </a>
+            </figure>
+            <figure>
+               <a href="#">
+                   <img class="sombra-imagen" src="images/programas/programa-prepa-videos.jpg" alt="vd">
+                </a>
+            </figure>
+           
+       </section>
+   </main>
+
+   <footer id="pie">
+       <div id="politicas">
+       <p><abbr title="Centro de estudios tecnologícos industrial y de servicios número 108">Cetis 108</abbr>. Guasave,Sinaloa,Mexíco. Algunos derechos reservados &copy; 2016. Políticas de Privacidad</p>
+       </div>
+       <div id="separador-sems">
+           <a id="separador-sems" href="http://www.sems.gob.mx" target="_blank">Subsecretaria de Educacion Media Superior</a>
+       </div>
+       <div id="direccion">
+<p >Zona Industrial S/N, Carretera a Los Angeles del Triunfo, CP. 81101 <br>
+Guasave, Sinaloa, México - Tel. (687) 87 234 07 <br>
+Comentarios sobre este Sitio de Internet</p>
+       </div>
+   </footer>
+      </div>
+       
+        
 </body>
 </html>
